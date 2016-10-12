@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title goes here...</title>
+
+    <!-- Stylesheets -->
+
+    {% include "stylesheets.twig" %}
+</head>
+
+<body>
+<div class="site-wrapper">
+    <!-- Header block -->
+    {% include "header.twig" %}
+    <!-- Header block end -->
+
+    <!-- Block content -->
+    {% block content %}{% endblock %}
+    <!-- Block content end -->
+
+    <!-- Footer block -->
+    {% include "footer.twig" %}
+    <!-- Footer block end -->
+
+    <!-- Scripts -->
+    {% include "scripts.twig" %}
+</div>
+<div class="popup tac hidden d-f">
+    <div class="overlay"></div>
+    <form action="#" class="popup-form p-rel">
+        <div class="popup-form__close"></div>
+        <div class="popup-form-content">
+        <p class="popup-form-title title-lev2 fz20 black mb20">Заказать звонок</p>
+                <div class="popup-input-wrapper dib vam mb30"><input type="text" placeholder="Фамилия"></div>
+                <div class="popup-input-wrapper dib vam mb30 inputmask-phone"><input type="text" placeholder="Телефон"></div>
+            <div class="tal">
+                <button href="#" class="green_btn ">Отправить <i class="r-arrow-icon ml20"></i></button>
+            </div>
+        </div>
+    </form>
+    <div class="notification m-auto hidden vam">
+        <div class="notification-content">
+            <p class="title-lev2 fz20 white mb15 black">Спасибо за обращение!</p>
+            <p class="title-lev2 fz20 white black">Наш менеджер с вами обязательно свяжется</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

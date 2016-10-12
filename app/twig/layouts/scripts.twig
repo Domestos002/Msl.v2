@@ -1,0 +1,79 @@
+<!-- build:js js/vendor.js-->
+<!--bower:js-->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/input.mask.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<!--endbower-->
+<!--endbulid-->
+
+<script src="js/map.js"></script>
+<script src="js/infoBubble.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!-- build:js js/common.js-->
+<script src="js/custom.js"></script>
+<!--endbulid-->
+<script>
+    $(document).ready(function() {
+        $(".b-main-slider").owlCarousel({
+            items: 1,
+            loop: true,
+            navigation: true,
+            nav: true,
+            mouseDrag: true,
+            autoHeight: true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        });
+    });
+    $(document).ready(function() {
+        $(".slider").owlCarousel({
+            items: 1,
+            loop: true,
+            navigation: false,
+            dots: true,
+            nav: false,
+            autoHeight: true,
+            mouseDrag: true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        });
+    });
+</script>
+
+<script>
+    $( function() {
+        $( "#slider-range" ).slider({
+            range: true,
+            min: 75000,
+            max: 500000,
+            step: 5000,
+            values: [ 75000, 150000 ],
+            slide: function( event, ui ) {
+                var slider = $(ui.handle).closest('.ui-slider');
+                slider
+                    .find('.ui-slider-handle:eq(0)')
+                    .html('<span class="slider_ui-handle__val">'+ui.values[0]+'</span>');
+                slider
+                    .find('.ui-slider-handle:eq(1)')
+                    .html('<span class="slider_ui-handle__val">'+ui.values[1]+'</span>');
+            }
+        });
+
+        $(function(){
+            var slider = $('#slider-range');
+            slider
+                    .find('.ui-slider-handle:eq(0)')
+                    .html('<span class="slider_ui-handle__val">'+slider.slider("values", 0)+'</span>');
+            slider
+                    .find('.ui-slider-handle:eq(1)')
+                    .html('<span class="slider_ui-handle__val">'+slider.slider("values", 1)+'</span>');
+        });
+    } );
+</script>

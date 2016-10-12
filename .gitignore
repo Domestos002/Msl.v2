@@ -1,0 +1,8 @@
+.idea
+node_modules
+app/*.html
+*.log
+app/bower_components
+app/sass-cache
+dist
+.sass-cache

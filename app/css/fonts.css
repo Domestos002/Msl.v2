@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "HelveticaNeueCyr-Roman";
+    src: url("../fonts/HelveticaNeueCyr-Roman.eot");
+    src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype"),
+    url("../fonts/HelveticaNeueCyr-Roman.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyr-Light";
+    src: url("../fonts/HelveticaNeueCyr-Roman.eot");
+    src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype"),
+    url("../fonts/HelveticaNeueCyr-Light.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: "HelveticaNeueCyr-Bold";
+    src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+    src: url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"),
+url("../fonts/HelveticaNeueCyr-Bold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto-Medium.eot");
+    src: url("../fonts/Roboto-Medium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Roboto-Medium.woff2") format("woff"),
+    url("../fonts/Roboto-Medium.ttf") format("truetype");
+    /*url("../fonts/Roboto-Regular.otf");*/
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MMuseoCyrl-500";
+    src:    url("../fonts/MuseoCyrl-500.eot");
+    src:    url("../fonts/MuseoCyrl-500.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoCyrl-500.woff2") format("woff"),
+    url("../fonts/Museo-Cyrl-500.ttf") format("truetype"),
+    url("../fonts/MuseoCyrl-500.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MuseoCyrl-700";
+    src:    url("../fonts/MuseoCyrl-700.eot");
+    src:    url("../fonts/MuseoCyrl-700.eot?#iefix")format("embedded-opentype"),
+            url("../fonts/MuseoCyrl-700.woff2") format("woff"),
+            url("../fonts/Museo-Cyrl-700.ttf") format("truetype"),
+            url("../fonts/MuseoCyrl-700.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MuseoCyrl-300";
+    src:    url("../fonts/MuseoCyrl-300.eot");
+    src:    url("../fonts/MuseoCyrl-300.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoCyrl-300.woff2") format("woff"),
+    url("../fonts/MuseoCyrl-300.ttf") format("truetype"),
+    url("../fonts/MuseoCyrl-300.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
