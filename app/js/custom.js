@@ -34,6 +34,8 @@ $(document).ready(function () {
 
     $(document).on("click", '.popup-trigger', function (e) {
         $('.popup').fadeIn(400);
+        $('.popup-form').show();
+        $('.notification').hide();
         e.preventDefault();
     });
 

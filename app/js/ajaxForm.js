@@ -22,9 +22,23 @@ $(document).ready(function () {
                                 $parent.siblings('.notification').removeAttr('style');
                                 $parent.removeAttr('style');
                             })
-                        }, 2000)
+                        }, 2000);
                     });
 
+                    console.log('hi')
+
+                } else {
+                    $('.popup').fadeIn(200);
+                    $('.popup-form').hide();
+                    $('.popup .notification').css({display: 'inline-block'});
+                    setTimeout(function () {
+                        $('.popup').fadeOut(300, function(){
+                            $parent.siblings('.notification').removeAttr('style');
+                            $parent.removeAttr('style');
+                        })
+                    }, 2000);
+
+                    console.log('hi');
                 }
             });
 

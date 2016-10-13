@@ -64,6 +64,8 @@
                 slider
                     .find('.ui-slider-handle:eq(1)')
                     .html('<span class="slider_ui-handle__val">'+ui.values[1]+'</span>');
+
+                $('input[name="budget"]').val(ui.values[0]+' - '+ui.values[1]);
             }
         });
 
@@ -75,6 +77,8 @@
             slider
                     .find('.ui-slider-handle:eq(1)')
                     .html('<span class="slider_ui-handle__val">'+slider.slider("values", 1)+'</span>');
+
+            $('input[name="budget"]').val(slider.slider("values", 0)+' - '+slider.slider("values", 1));
         });
     } );
 </script>

@@ -1,12 +1,29 @@
 <?php
 if(isset($_POST['phone'])) {
 
-    $fullname = "ФИО:\r\n" . $_POST['name'] . "\r\n\r\n";
-    $phone = "Телефон:\r\n" . $_POST['phone'] . "\r\n\r\n";
-
     $message = ''; //message body
 
-    $message .= $fullname . $phone;
+//    $message .= $fullname . $phone;
+
+    if(isset($_POST['budget']) && $_POST['budget']) {
+        $message .= "Бюджет:\r\n" . $_POST['budget'] . "\r\n\r\n";
+    }
+
+    if(isset($_POST['city']) && $_POST['city']) {
+        $message .= "Город:\r\n" . $_POST['city'] . "\r\n\r\n";
+    }
+
+    if(isset($_POST[' niche']) && $_POST['niche']) {
+        $message .= "Нисша:\r\n" . $_POST[' niche'] . "\r\n\r\n";
+    }
+
+    if(isset($_POST['name']) && $_POST['name']) {
+        $message .= "ФИО:\r\n" . $_POST[' name'] . "\r\n\r\n";
+    }
+
+    if(isset($_POST[' phone']) && $_POST['phone']) {
+        $message .= "Телефон:\r\n" . $_POST[' phone'] . "\r\n\r\n";
+    }
 
     $from_email = 'no-repeat@mail.ru'; //sender email
     $recipient_email = 'frontline_tz@mail.ru'; //recipient email
