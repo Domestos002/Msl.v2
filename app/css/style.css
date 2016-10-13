@@ -474,6 +474,7 @@ input {
   font-family: "HelveticaNeueCyr-Roman";
   box-sizing: border-box;
   border: 1px solid #ebe9e8;
+  font-size: 16px;
 }
 input::-webkit-input-placeholder {
   color: #7f7f86 !important;
@@ -905,7 +906,7 @@ input:-ms-input-placeholder {
 }
 
 .first-screen {
-  background-image: url('../images/first-screen.png?1475567949');
+  background-image: url('../images/first-screen.png?1476276067');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -915,7 +916,7 @@ input:-ms-input-placeholder {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../images/first-screen@2x.png?1475584936');
+    background-image: url('../images/first-screen@2x.png?1476276067');
     background-size: cover;
   }
 }
@@ -1597,7 +1598,7 @@ footer > .container {
 }
 
 .calculation-of-income {
-  background-image: url('../images/calculation-of-income.png?1475568379');
+  background-image: url('../images/calculation-of-income.png?1476276067');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1605,7 +1606,7 @@ footer > .container {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .calculation-of-income {
-    background-image: url('../images/calculation-of-income@2x.png?1475661555');
+    background-image: url('../images/calculation-of-income@2x.png?1476276067');
     background-size: cover;
   }
 }
@@ -1726,7 +1727,7 @@ footer > .container {
 }
 
 .b-our-project-info {
-  padding: 36px 0;
+  padding: 36px 0 0;
   float: right;
   width: 57%;
 }
@@ -2566,6 +2567,9 @@ footer {
   border-radius: 5px;
   width: 260px;
   position: relative;
+}
+.notification:not(.hidden) {
+  display: inline-block;
 }
 
 .notification__close {

@@ -32,6 +32,7 @@ input
     -moz-box-sizing: border-box
     box-sizing: border-box
     border: 1px solid #ebe9e8
+    font-size: 16px
 
 .container
     max-width: 1250px
@@ -803,7 +804,7 @@ footer > .container
     padding: 50px 55px
 
 .b-our-project-info
-    padding: 36px 0
+    padding: 36px 0 0
     float: right
     width: 57%
 
@@ -1259,6 +1260,8 @@ footer
     border-radius: 5px
     width: 260px
     position: relative
+    &:not(.hidden)
+        display: inline-block
 
 .notification__close
     position: absolute
