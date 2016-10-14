@@ -34,6 +34,57 @@ input
     border: 1px solid #ebe9e8
     font-size: 16px
 
+.jq-selectbox__select
+    max-height: 55px
+    min-height: 40px
+    padding: 0 45px 0 10px
+    border: 1px solid #ebe9e8
+    border-bottom-color: #B3B3B3
+    border-radius: 4px
+    background: #fff
+    font: 14px/32px Arial, sans-serif
+    color: #333
+    text-shadow: 1px 1px #FFF
+.jq-selectbox__select:hover
+    background: #E6E6E6
+
+.jq-selectbox__select:active
+    background: #F5F5F5
+
+.jq-selectbox.focused .jq-selectbox__select
+    border: 1px solid #5794BF
+
+.jq-selectbox.disabled .jq-selectbox__select
+    border-color: #CCC
+    background: #F5F5F5
+    box-shadow: none
+    color: #888
+
+.jq-selectbox__select-text
+    display: block
+    overflow: hidden
+    color: $grey
+    width: 100% !important
+    white-space: nowrap
+    text-overflow: ellipsis
+
+.jq-selectbox__trigger
+    top: 0
+    right: 0
+    width: 5px
+    height: 100%
+    border: none
+
+.jq-selectbox__trigger-arrow
+    position: absolute
+    top: calc(50% - 2px)
+    right: 12px
+    width: 0
+    height: 0
+    border-top: 5px solid #999
+    border-right: 5px solid transparent
+    border-left: 5px solid transparent
+
 .container
     max-width: 1250px
     //min-width: 320px
@@ -776,6 +827,7 @@ footer > .container
     -moz-box-sizing: border-box
     box-sizing: border-box
     border: 1px solid #ebe9e8
+    box-shadow: none
     font-size: 16px
 
 .jq-checkbox
@@ -845,7 +897,7 @@ footer > .container
 .jq-selectbox__select
     max-height: 55px
     min-height: 40px
-    padding: 0 45px 0 10px
+    padding: 0 30px 0 10px
     border: 1px solid #CCC
     border-bottom-color: #B3B3B3
     border-radius: 4px
@@ -1382,52 +1434,4 @@ footer
 @import _responsive.sass
 @import _new_styles.sass
 
-.jq-selectbox__select
-    max-height: 55px
-    min-height: 40px
-    padding: 0 45px 0 10px
-    border: 1px solid #CCC
-    border-bottom-color: #B3B3B3
-    border-radius: 4px
-    background: #fff
-    font: 14px/32px Arial, sans-serif
-    color: #333
-    text-shadow: 1px 1px #FFF
-.jq-selectbox__select:hover
-    background: #E6E6E6
 
-.jq-selectbox__select:active
-    background: #F5F5F5
-
-.jq-selectbox.focused .jq-selectbox__select
-    border: 1px solid #5794BF
-
-.jq-selectbox.disabled .jq-selectbox__select
-    border-color: #CCC
-    background: #F5F5F5
-    box-shadow: none
-    color: #888
-
-.jq-selectbox__select-text
-    display: block
-    overflow: hidden
-    width: 100% !important
-    white-space: nowrap
-    text-overflow: ellipsis
-
-.jq-selectbox__trigger
-    top: 0
-    right: 0
-        width: 5px
-    height: 100%
-    border-left: 1px solid #CCC
-
-.jq-selectbox__trigger-arrow
-    position: absolute
-    top: calc(50% - 2px)
-    right: 12px
-    width: 0
-    height: 0
-    border-top: 5px solid #999
-    border-right: 5px solid transparent
-    border-left: 5px solid transparent
