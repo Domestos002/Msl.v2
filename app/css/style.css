@@ -906,7 +906,7 @@ input:-ms-input-placeholder {
 }
 
 .first-screen {
-  background-image: url('../images/first-screen.png?1476276067');
+  background-image: url('../images/first-screen.png?1475567949');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -916,7 +916,7 @@ input:-ms-input-placeholder {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .first-screen {
-    background-image: url('../images/first-screen@2x.png?1476276067');
+    background-image: url('../images/first-screen@2x.png?1475584936');
     background-size: cover;
   }
 }
@@ -1598,7 +1598,7 @@ footer > .container {
 }
 
 .calculation-of-income {
-  background-image: url('../images/calculation-of-income.png?1476276067');
+  background-image: url('../images/calculation-of-income.png?1475568379');
   background-position: 100% center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1606,7 +1606,7 @@ footer > .container {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .calculation-of-income {
-    background-image: url('../images/calculation-of-income@2x.png?1476276067');
+    background-image: url('../images/calculation-of-income@2x.png?1475661555');
     background-size: cover;
   }
 }
@@ -1819,8 +1819,8 @@ footer > .container {
   width: 10px;
   height: 10px;
   border: 2px solid transparent;
-  border-top: 2px solid #cdcdcd;
-  border-left: 2px solid #cdcdcd;
+  border-top: 2px solid #b1aaaa;
+  border-left: 2px solid #b1aaaa;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -1840,8 +1840,8 @@ footer > .container {
   width: 10px;
   height: 10px;
   border: 2px solid transparent;
-  border-bottom: 2px solid #cdcdcd;
-  border-right: 2px solid #cdcdcd;
+  border-bottom: 2px solid #b1aaaa;
+  border-right: 2px solid #b1aaaa;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
