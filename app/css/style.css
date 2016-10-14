@@ -1292,6 +1292,12 @@ input:-ms-input-placeholder {
   left: 0;
   margin: 0;
 }
+.b-you-get__number:before {
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  content: "";
+}
 
 .b-you-get__header {
   position: relative;
@@ -1748,9 +1754,10 @@ footer > .container {
   padding: 0 20px;
   font-family: "HelveticaNeueCyr-Roman";
   box-sizing: border-box;
-  border: 1px solid #ebe9e8;
   box-shadow: none;
   font-size: 16px;
+  border: none !important;
+  border: 1px solid #ebe9e8 !important;
 }
 
 .jq-checkbox {
