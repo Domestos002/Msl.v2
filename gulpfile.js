@@ -163,10 +163,10 @@ gulp.task('build',["clean"], function(){
         gulp.src("app/fonts/**/*")
             .pipe(gulp.dest('dist/fonts'));
 
-        gulp.src("app/images/**/*")
+        gulp.src(["app/images/**/*", "!app/images/icons/", "!app/images/icons-2x/", "!app/images/icons/**", "!app/images/icons-2x/**"])
             .pipe(gulp.dest('dist/images'));
 
-        gulp.src("app/img/**/*")
+        gulp.src(["app/img/**/*", "!app/img/icons/", "!app/img/icons-2x/", "!app/img/icons/**", "!app/img/icons-2x/**"])
             .pipe(gulp.dest('dist/img'));
 
         gulp.src("app/img/**/*")

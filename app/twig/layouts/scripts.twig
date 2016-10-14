@@ -29,37 +29,39 @@
     });
 </script>
 <script>
-    $(document).ready(function() {
-        $(".b-main-slider").owlCarousel({
-            items: 1,
-            loop: true,
-            navigation: true,
-            nav: true,
-            mouseDrag: true,
-            autoHeight: true,
-            responsive: {
-                0: {
-                    items: 1
+    setTimeout(function () {
+        $(document).ready(function() {
+            $(".b-main-slider").owlCarousel({
+                items: 1,
+                loop: true,
+                navigation: true,
+                nav: true,
+//            mouseDrag: true,
+                autoHeight: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    }
                 }
-            }
+            });
         });
-    });
-    $(document).ready(function() {
-        $(".slider").owlCarousel({
-            items: 1,
-            loop: true,
-            navigation: false,
-            dots: true,
-            nav: false,
-            autoHeight: true,
-            mouseDrag: true,
-            responsive: {
-                0: {
-                    items: 1
+        $(document).ready(function() {
+            $(".slider").owlCarousel({
+                items: 1,
+                loop: true,
+                navigation: false,
+                dots: true,
+                nav: false,
+                autoHeight: true,
+//            mouseDrag: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    }
                 }
-            }
+            });
         });
-    });
+    }, 1000);
 </script>
 
 <script>
