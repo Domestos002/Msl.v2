@@ -78,7 +78,7 @@ $(document).ready(function () {
      e.preventDefault();
      });
      */
-
+    $("select, input:radio, input:checkbox").styler();
 
 });
 
@@ -119,3 +119,5 @@ function what_youll_get() {
         }, 100);
     });
 }
+
+

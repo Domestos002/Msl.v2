@@ -1663,10 +1663,41 @@ footer > .container {
 }
 
 .income-form-input {
-  height: 55px;
+  max-height: 55px;
+  min-height: 40px;
   width: 100%;
   font-family: "HelveticaNeueCyr-Roman";
   font-size: 16px;
+}
+
+.jq-selectbox {
+  width: 100%;
+}
+
+.jq-selectbox__select {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #7f7f86;
+  padding: 0 20px;
+  font-family: "HelveticaNeueCyr-Roman";
+  box-sizing: border-box;
+  border: 1px solid #ebe9e8;
+  font-size: 16px;
+}
+
+.jq-checkbox {
+  height: 55px;
+  width: 100%;
+}
+
+.jq-selectbox__select-text {
+  font-family: "HelveticaNeueCyr-Roman";
+  font-size: 16px;
+  width: 100%;
 }
 
 .calculation-of-income__form__col {

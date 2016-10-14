@@ -754,14 +754,39 @@ footer > .container
     justify-content: space-between
 
 .income-form-input
-    height: 55px
+    max-height: 55px
+    min-height: 40px
     width: 100%
     font-family: $ffHel-r
     font-size: 16px
 
+.jq-selectbox
+    width: 100%
+
+.jq-selectbox__select
+    display: flex
+    align-items: center
+    color: $grey
+    padding: 0 20px
+    font-family: $ffHel-r
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    border: 1px solid #ebe9e8
+    font-size: 16px
+
+.jq-checkbox
+    height: 55px
+    width: 100%
+
+.jq-selectbox__select-text
+    font-family: $ffHel-r
+    font-size: 16px
+    width: 100%
+
 .calculation-of-income__form__col
     flex: 47.5%
-    margin-right: 5%
+    margin-right: 5% //grr
     &.last-child
         margin-right: 0
 
