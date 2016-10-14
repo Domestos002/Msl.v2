@@ -1283,6 +1283,7 @@ input:-ms-input-placeholder {
   background-color: #0692da;
   width: 24px;
   height: 24px;
+  line-height: 24px;
   float: left;
   color: #fff;
   text-align: center;
