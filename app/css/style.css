@@ -76,7 +76,7 @@
 }
 
 .ffR-m {
-  font-family: "Roboto-Medum" !important;
+  font-family: "Roboto-Medium" !important;
 }
 
 .ffHel-r {
@@ -1448,7 +1448,7 @@ input:-ms-input-placeholder {
   padding-left: 10px;
   padding-top: 0;
   display: inline-block;
-  max-width: 30%;
+  max-width: 37%;
   vertical-align: middle;
 }
 
@@ -1772,6 +1772,19 @@ footer > .container {
 
 .b-our-project-title > .title-lev2 > p {
   margin: 0;
+}
+
+.jq-selectbox__select {
+  max-height: 55px;
+  min-height: 40px;
+  padding: 0 45px 0 10px;
+  border: 1px solid #CCC;
+  border-bottom-color: #B3B3B3;
+  border-radius: 4px;
+  background: #fff;
+  font: 14px/32px Arial, sans-serif;
+  color: #333;
+  text-shadow: 1px 1px #FFF;
 }
 
 .b-our-project-title {
@@ -2208,6 +2221,9 @@ footer {
   margin-bottom: 70px;
 }
 
+.our-clients {
+  text-align: right;
+}
 .our-clients > .container > .b-page-title {
   margin-bottom: 9%;
 }
@@ -3460,4 +3476,63 @@ footer {
   font-size: 14px;
   font-family: "HelveticaNeueCyr-Roman";
   color: #646464;
+}
+
+.jq-selectbox__select {
+  max-height: 55px;
+  min-height: 40px;
+  padding: 0 45px 0 10px;
+  border: 1px solid #CCC;
+  border-bottom-color: #B3B3B3;
+  border-radius: 4px;
+  background: #fff;
+  font: 14px/32px Arial, sans-serif;
+  color: #333;
+  text-shadow: 1px 1px #FFF;
+}
+
+.jq-selectbox__select:hover {
+  background: #E6E6E6;
+}
+
+.jq-selectbox__select:active {
+  background: #F5F5F5;
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+  border: 1px solid #5794BF;
+}
+
+.jq-selectbox.disabled .jq-selectbox__select {
+  border-color: #CCC;
+  background: #F5F5F5;
+  box-shadow: none;
+  color: #888;
+}
+
+.jq-selectbox__select-text {
+  display: block;
+  overflow: hidden;
+  width: 100% !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.jq-selectbox__trigger {
+  top: 0;
+  right: 0;
+  right-width: 5px;
+  height: 100%;
+  border-left: 1px solid #CCC;
+}
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 12px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #999;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
 }

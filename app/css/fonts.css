@@ -34,11 +34,8 @@ url("../fonts/HelveticaNeueCyr-Bold.otf");
 
 @font-face {
     font-family: "Roboto-Medium";
-    src: url("../fonts/Roboto-Medium.eot");
-    src: url("../fonts/Roboto-Medium.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/Roboto-Medium.woff2") format("woff"),
-    url("../fonts/Roboto-Medium.ttf") format("truetype");
-    /*url("../fonts/Roboto-Regular.otf");*/
+    src: url('../fonts/roboto-medium.eot');
+    src: url('../fonts/roboto-medium.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto-medium.woff') format('woff'), url('../fonts/roboto-medium.ttf') format('truetype'), url('../fonts/roboto-medium.svg#Roboto-Medium') format('svg');
     font-style: normal;
     font-weight: normal;
 }
