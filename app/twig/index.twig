@@ -6,9 +6,9 @@
         <div class="first-screen p-rel">
 
             <div class="container ">
-            <div class="first-screen-content">
-                <h1 class="page-title mb100 ttu  white tac fz53">Прибыльный интернет-бизнес <br>
-                    за 27 дней под ключ</h1>
+                <div class="first-screen-content">
+                    <h1 class="page-title mb100 ttu  white tac fz53">Прибыльный интернет-бизнес <br>
+                        за 27 дней под ключ</h1>
                     <div class="wrapper">
                         <div class="first-screen-bullets fl-grid-b mb70">
                             <div class="first-screen-bullets__item">
@@ -27,11 +27,12 @@
                     </div>
                     <div class="fl-center">
                         <div class="first-screen-buttons fl-center clearfix">
-                            <p class="left mr25"><a href="#" class="empty_btn tdn no-hover">Узнать подробнее</a></p>
-                            <p class="right tac"><a href="#" class="red_btn tdn no-hover popup-trigger proj">Заказать проект <i class="r-arrow-icon ml20"></i></a></p>
+                            <p class="left mr25"><a href="#" class="empty_btn tdn no-hover popup-trigger" data-more-popup="true">Узнать подробнее</a></p>
+                            <p class="right tac"><a href="#" class="red_btn tdn no-hover popup-trigger proj">Заказать
+                                    проект <i class="r-arrow-icon ml20"></i></a></p>
                         </div>
                     </div>
-            </div>
+                </div>
             </div>
             <a href="#advantages" class="js-scrollScreen w-circle"></a>
 
@@ -208,109 +209,114 @@
                 <i class="pdf-icon"></i>
             </a>
         </div>
-        <div class="calculation-of-income" >
+        <div class="calculation-of-income">
             <a id="cost-of"></a>
             <div class="container">
-            <div class="b-page-title white mb50 tac">
-                <p class="page-title ttu white mb20 fz46">Расчёт <br>
-                    дохода бизнеса</p>
-                <p class="title-lev2 white fz22">Выберите из 44 доступных ниш или предложите свою!</p>
-            </div>
-            <div class="b-calculation-of-income">
-                <form action="#" class="calculation-of-income__form p-rel">
-                    <div class="calculation__inner">
-                        <div class="calculation-of-income__form__col mb35">
-                            <div class="b-calculation-of-income__form">
-                                <label for="" class="income-form-label  mb20 db">Выберите желаемую нишу</label>
-                                <select  size="1" name="niche">
-                                    <option value="">Нужна помощь с выбором</option>
-                                    <option value="">Автоаксессуары</option>
-                                    <option value="">Автозапчасти</option>
-                                    <option value="">Бытовая техника</option>
-                                    <option selected value="">Велосипеды</option>
-                                    <option value="">Водный транспорт</option>
-                                    <option value="">Детские товары</option>
-                                    <option value="">Дом, дача и ремонт</option>
-                                    <option value="">Зоотовары</option>
-                                    <option value="">Книги и музыка</option>
-                                    <option value="">Комплектующие для ПК</option>
-                                    <option value="">Компьютеры и ноутбуки</option>
-                                    <option value="">Мебель</option>
-                                    <option value="">Медицина и здоровье</option>
-                                    <option value="">Металлоискатели</option>
-                                    <option value="">Мототехника</option>
-                                    <option value="">Нижнее белье</option>
-                                    <option value="">Оборудование</option>
-                                    <option value="">Обувь</option>
-                                    <option value="">Одежда</option>
-                                    <option value="">Оптика</option>
-                                    <option value="">Офисная техника, канцелярия</option>
-                                    <option value="">Парфюмерия и косметика</option>
-                                    <option value="">Плавание</option>
-                                    <option value="">Планшеты и игровые приставки</option>
-                                    <option value="">Подарки</option>
-                                    <option value="">Развлечения и досуг</option>
-                                    <option value="">Рыбалка</option>
-                                    <option value="">Смартфоны и гаджеты</option>
-                                    <option value="">Сноуборды и беговые лыжи</option>
-                                    <option value="">Спецтехника</option>
-                                    <option value="">Спорт</option>
-                                    <option value="">Спортивное питание</option>
-                                    <option value="">Стройматериалы</option>
-                                    <option value="">Сумки и чемоданы</option>
-                                    <option value="">ТВ, Аудио, Видео</option>
-                                    <option value="">Туризм</option>
-                                    <option value="">Услуги и сервисы</option>
-                                    <option value="">Фото и видеокамеры</option>
-                                    <option value="">Футбол</option>
-                                    <option value="">Хоккей</option>
-                                    <option value="">Шлемы, маски, защита</option>
-                                    <option value="">Шоу</option>
-                                    <option value="">Электроника</option>
-                                    <option value="">Ювелирные изделия</option>
-                                    <option value="">Своя ниша</option>
-                                </select>
+                <div class="b-page-title white mb50 tac">
+                    <p class="page-title ttu white mb20 fz46">Расчёт <br>
+                        дохода бизнеса</p>
+                    <p class="title-lev2 white fz22">Выберите из 44 доступных ниш или предложите свою!</p>
+                </div>
+                <div class="b-calculation-of-income">
+                    <form action="sendmail1.php" class="calculation-of-income__form p-rel">
+                        <input type="hidden" name="formName" value="Стоимость Вашего проекта">
+                        <div class="calculation__inner">
+                            <div class="calculation-of-income__form__col mb35">
+                                <div class="b-calculation-of-income__form">
+                                    <label for="" class="income-form-label  mb20 db">Выберите желаемую нишу</label>
+                                    <select name="vibor">
+                                        <option value="">-</option>
+                                        <option value="Нужна помощь с выбором">Нужна помощь с выбором</option>
+                                        <option value="Автоаксессуары">Автоаксессуары</option>
+                                        <option value="Автозапчасти">Автозапчасти</option>
+                                        <option value="Бытовая техника">Бытовая техника</option>
+                                        <option value="Велосипеды" selected>Велосипеды</option>
+                                        <option value="Водный транспорт">Водный транспорт</option>
+                                        <option value="Детские товары">Детские товары</option>
+                                        <option value="Дом, дача и ремонт">Дом, дача и ремонт</option>
+                                        <option value="Зоотовары">Зоотовары</option>
+                                        <option value="Книги и музыка">Книги и музыка</option>
+                                        <option value="Комплектующие для ПК">Комплектующие для ПК</option>
+                                        <option value="Компьютеры и ноутбуки">Компьютеры и ноутбуки</option>
+                                        <option value="Мебель">Мебель</option>
+                                        <option value="Медицина и здоровье">Медицина и здоровье</option>
+                                        <option value="Металлоискатели">Металлоискатели</option>
+                                        <option value="Мототехника">Мототехника</option>
+                                        <option value="Нижнее белье">Нижнее белье</option>
+                                        <option value="Оборудование">Оборудование</option>
+                                        <option value="Обувь">Обувь</option>
+                                        <option value="Одежда">Одежда</option>
+                                        <option value="Оптика">Оптика</option>
+                                        <option value="Офисная техника, канцелярия">Офисная техника, канцелярия</option>
+                                        <option value="Парфюмерия и косметика">Парфюмерия и косметика</option>
+                                        <option value="Плавание">Плавание</option>
+                                        <option value="Планшеты и игровые приставки">Планшеты и игровые приставки
+                                        </option>
+                                        <option value="Подарки">Подарки</option>
+                                        <option value="Развлечения и досуг">Развлечения и досуг</option>
+                                        <option value="Рыбалка">Рыбалка</option>
+                                        <option value="Смартфоны и гаджеты">Смартфоны и гаджеты</option>
+                                        <option value="Сноуборды и беговые лыжи">Сноуборды и беговые лыжи</option>
+                                        <option value="Спецтехника">Спецтехника</option>
+                                        <option value="Спорт">Спорт</option>
+                                        <option value="Спортивное питание">Спортивное питание</option>
+                                        <option value="Стройматериалы">Стройматериалы</option>
+                                        <option value="Сумки и чемоданы">Сумки и чемоданы</option>
+                                        <option value="ТВ, Аудио, Видео">ТВ, Аудио, Видео</option>
+                                        <option value="Туризм">Туризм</option>
+                                        <option value="Услуги и сервисы">Услуги и сервисы</option>
+                                        <option value="Фото и видеокамеры">Фото и видеокамеры</option>
+                                        <option value="Футбол">Футбол</option>
+                                        <option value="Хоккей">Хоккей</option>
+                                        <option value="Шлемы, маски, защита">Шлемы, маски, защита</option>
+                                        <option value="Шоу">Шоу</option>
+                                        <option value="Электроника">Электроника</option>
+                                        <option value="Ювелирные изделия">Ювелирные изделия</option>
+                                        <option value="Своя ниша">Своя ниша</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="calculation-of-income__form__col mb35">
+                                <div class="b-calculation-of-income__form">
+                                    <p class="income-form-label mb20 db">Бюджет на проект</p>
+                                    <select name="price">
+                                        <option selected value="">75 000 - 150 000 руб.</option>
+                                        <option value="">150 000 - 200 000 руб.</option>
+                                        <option value="">более 200 000 руб</option>
+                                    </select>
+                                    <input type="hidden" name="budget">
+                                </div>
                             </div>
                         </div>
-                        <div class="calculation-of-income__form__col mb35">
-                            <div class="b-calculation-of-income__form">
-                                <p class="income-form-label mb20 db">Бюджет на проект</p>
-                                <select  size="1"  name="niche">
-                                    <option selected value="">75 000 - 150 000 руб.</option>
-                                    <option value="">150 000 - 200 000 руб.</option>
-                                    <option value="">более 200 000 руб</option>
-                                </select>
-                                <input type="hidden" name="budget">
+                        <div class="calculation__inner mb37">
+                            <div class="calculation-of-income__form__col mb35">
+                                <div class="b-calculation-of-income__form">
+                                    <label for="" class="income-form-label mb20 db">Ваш город</label>
+                                    <input class="income-form-input" type="text" placeholder="Введите ваш город"
+                                           name="city">
+                                </div>
+                            </div>
+                            <div class="calculation-of-income__form__col">
+                                <div class="b-calculation-of-income__form">
+                                    <label for="" class="income-form-label mb20  db">Номер телефона</label>
+                                    <input class="income-form-input inputmask-phone" required type="text" name="phone"
+                                           placeholder="+7 (___) ___-__-__">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="calculation__inner mb37">
-                        <div class="calculation-of-income__form__col mb35">
-                            <div class="b-calculation-of-income__form">
-                                <label for="" class="income-form-label mb20 db">Ваш город</label>
-                                <input class="income-form-input" type="text" placeholder="Москва" name="city">
-                            </div>
+                        <div class="tac">
+                            <button class="calc_btn">Рассчитать стоимость <i class="r-arrow-icon vam ml10"></i>
+                            </button>
                         </div>
-                        <div class="calculation-of-income__form__col">
-                            <div class="b-calculation-of-income__form">
-                                <label for="" class="income-form-label mb20  db">Номер телефона</label>
-                                <input class="income-form-input inputmask-phone" type="text" name="phone" placeholder="+7 (___) ___-__-__">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tac">
-                        <button class="calc_btn">Рассчитать стоимость <i class="r-arrow-icon vam ml10"></i>
-                        </button>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
             </div>
         </div>
         <!-- BEGIN b-main-slider-wrapper -->
         <div class="our-projects">
             <a id="our-projects"></a>
             <div class="b-page-title white  tac">
-                <p class="page-title ttu white mb20 black fz46" >Наши успешные проекты</p>
+                <p class="page-title ttu white mb20 black fz46">Наши успешные проекты</p>
                 <p class="title-lev2 lighter-grey fz22">Все бизнес-проекты приносят более 50 тыс. руб в
                     месяц</p>
             </div>
@@ -373,7 +379,8 @@
                                         </div>
                                         <div class="title-lev2 fz16 black tal pl24 mb45">
                                             <p class="ffMcyr700 mb5">Предыстория</p>
-                                            <p class="lh1-65">Клиент обратился с задачей перенести бизнес из офлайна в онлайн, цель -
+                                            <p class="lh1-65">Клиент обратился с задачей перенести бизнес из офлайна в
+                                                онлайн, цель -
                                                 создание полноценного интернет-магазина. До работы с нами: Среднее
                                                 количество продаж в день 10 Оборот в день 35 000 рублей</p>
                                         </div>
@@ -431,13 +438,17 @@
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
                                                     <li class="b-our-projects__result-list-item">Время проекта 30 дней
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">был разработан и наполнен сайт, также проведены необходимые работы по поисковой оптимизации
+                                                    <li class="b-our-projects__result-list-item">был разработан и
+                                                        наполнен сайт, также проведены необходимые работы по поисковой
+                                                        оптимизации
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">20 -30 заказов в неделю по SEO-трафику и директу
+                                                    <li class="b-our-projects__result-list-item">20 -30 заказов в неделю
+                                                        по SEO-трафику и директу
                                                     </li>
                                                     <li class="b-our-projects__result-list-item">Доход 130 000 в месяц
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Работа по дропшиппингу (без вложений, офиса, сотрудников и склада)
+                                                    <li class="b-our-projects__result-list-item">Работа по дропшиппингу
+                                                        (без вложений, офиса, сотрудников и склада)
                                                     </li>
                                                 </ul>
                                             </div>
@@ -460,7 +471,11 @@
                                         </div>
                                         <div class="title-lev2 fz16 black tal pl24 mb45">
                                             <p class="ffMcyr700 mb5">Предыстория</p>
-                                            <p class="lh1-65">Клиент работает сотрудником банка. Хотел себе дополнительный источник дохода. Выбирали нишу долго, в итоге выбрали очки Polaroid, потому как там удобная система дропшиппинга. Клиент не хотел бросать работу и рассматривал сайт как источник дополнительного заработка.</p>
+                                            <p class="lh1-65">Клиент работает сотрудником банка. Хотел себе
+                                                дополнительный источник дохода. Выбирали нишу долго, в итоге выбрали
+                                                очки Polaroid, потому как там удобная система дропшиппинга. Клиент не
+                                                хотел бросать работу и рассматривал сайт как источник дополнительного
+                                                заработка.</p>
                                         </div>
                                         <div class="b-our-projects__result fl-grid-b pl24 mb20 mb20">
                                             <div class="b-our-projects__result-item w100">
@@ -468,13 +483,17 @@
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
                                                     <li class="b-our-projects__result-list-item">Время проекта 30 дней
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">был разработан и наполнен сайт, также проведены необходимые работы по поисковой оптимизации
+                                                    <li class="b-our-projects__result-list-item">был разработан и
+                                                        наполнен сайт, также проведены необходимые работы по поисковой
+                                                        оптимизации
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">20 -30 заказов в неделю по SEO-трафику и директу
+                                                    <li class="b-our-projects__result-list-item">20 -30 заказов в неделю
+                                                        по SEO-трафику и директу
                                                     </li>
                                                     <li class="b-our-projects__result-list-item">Доход 130 000 в месяц
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Работа по дропшиппингу (без вложений, офиса, сотрудников и склада)
+                                                    <li class="b-our-projects__result-list-item">Работа по дропшиппингу
+                                                        (без вложений, офиса, сотрудников и склада)
                                                     </li>
                                                 </ul>
                                             </div>
@@ -500,13 +519,19 @@
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
                                                     <li class="b-our-projects__result-list-item">Был сделан сайт
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">По нашей рекомендации был создан youtube канал, а также сообщества в соц. сетях
+                                                    <li class="b-our-projects__result-list-item">По нашей рекомендации
+                                                        был создан youtube канал, а также сообщества в соц. сетях
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item"> За пол года сайт вышел в топ по ключевым запросам и без вложений в рекламу стали падать заявки
+                                                    <li class="b-our-projects__result-list-item"> За пол года сайт вышел
+                                                        в топ по ключевым запросам и без вложений в рекламу стали падать
+                                                        заявки
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">В среднем в день по 4-8 заявок, которые помимо разовых продаж принесли постоянных клиентов
+                                                    <li class="b-our-projects__result-list-item">В среднем в день по 4-8
+                                                        заявок, которые помимо разовых продаж принесли постоянных
+                                                        клиентов
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Доход в месяц составляет 200-250 тыс. рублей.
+                                                    <li class="b-our-projects__result-list-item">Доход в месяц
+                                                        составляет 200-250 тыс. рублей.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -529,7 +554,10 @@
                                         </div>
                                         <div class="title-lev2 fz16 black tal pl24 mb45">
                                             <p class="ffMcyr700 mb5">Предыстория</p>
-                                            <p class="lh1-65">Клиент работал в продажах электронного оборудования и увлекался курением кальянов. И очень хотел уйти с работы и открыть своё дело. С нишей было всё понятно, оставалось дело за малым: запустить интернет-магазин.</p>
+                                            <p class="lh1-65">Клиент работал в продажах электронного оборудования и
+                                                увлекался курением кальянов. И очень хотел уйти с работы и открыть своё
+                                                дело. С нишей было всё понятно, оставалось дело за малым: запустить
+                                                интернет-магазин.</p>
                                         </div>
                                         <div class="b-our-projects__result fl-grid-b pl24 mb20 mb20">
                                             <div class="b-our-projects__result-item w100">
@@ -537,13 +565,19 @@
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
                                                     <li class="b-our-projects__result-list-item">Был сделан сайт
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">По нашей рекомендации был создан youtube канал, а также сообщества в соц. сетях
+                                                    <li class="b-our-projects__result-list-item">По нашей рекомендации
+                                                        был создан youtube канал, а также сообщества в соц. сетях
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item"> За пол года сайт вышел в топ по ключевым запросам и без вложений в рекламу стали падать заявки
+                                                    <li class="b-our-projects__result-list-item"> За пол года сайт вышел
+                                                        в топ по ключевым запросам и без вложений в рекламу стали падать
+                                                        заявки
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">В среднем в день по 4-8 заявок, которые помимо разовых продаж принесли постоянных клиентов
+                                                    <li class="b-our-projects__result-list-item">В среднем в день по 4-8
+                                                        заявок, которые помимо разовых продаж принесли постоянных
+                                                        клиентов
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Доход в месяц составляет 200-250 тыс. рублей.
+                                                    <li class="b-our-projects__result-list-item">Доход в месяц
+                                                        составляет 200-250 тыс. рублей.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -567,22 +601,32 @@
                                             <div class="b-our-projects__result-item w100">
                                                 <p class="title-lev2 ffMcyr700 black fz18">Показатели проекта</p>
                                                 <ul class="b-our-projects__result-list fz14 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">- Выбрана ниша продажи бетона, проанализированы сайты конкурентов
+                                                    <li class="b-our-projects__result-list-item">- Выбрана ниша продажи
+                                                        бетона, проанализированы сайты конкурентов
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">- Найдена компания-партнер для покупки лидов
+                                                    <li class="b-our-projects__result-list-item">- Найдена
+                                                        компания-партнер для покупки лидов
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">- Создан сайт для Москвы и обсласти.
+                                                    <li class="b-our-projects__result-list-item">- Создан сайт для
+                                                        Москвы и обсласти.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">- Написаны тексты, проработан каталог
+                                                    <li class="b-our-projects__result-list-item">- Написаны тексты,
+                                                        проработан каталог
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">- Сайт зарегистрирован в качественных “белых” каталогах
+                                                    <li class="b-our-projects__result-list-item">- Сайт зарегистрирован
+                                                        в качественных “белых” каталогах
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="b-our-projects__result-item w100">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Наш результат</p>
                                                 <div class="title-lev2 fz16 black tal mb45">
-                                                    <p class="lh1-65">Перед майскими праздниками мы передали сайт клиенту, к середине мая нашли компанию-партнера на покупку лидов. Конечный клиент доволен сайтом, поступает много хороших заявок от частных клиентов (заливка ленточных фундаментов, покупка блоков ФБС) Чистая прибыль нашего клиента в сезон составляет в среднем 80 тысяч рублей.</p>
+                                                    <p class="lh1-65">Перед майскими праздниками мы передали сайт
+                                                        клиенту, к середине мая нашли компанию-партнера на покупку
+                                                        лидов. Конечный клиент доволен сайтом, поступает много хороших
+                                                        заявок от частных клиентов (заливка ленточных фундаментов,
+                                                        покупка блоков ФБС) Чистая прибыль нашего клиента в сезон
+                                                        составляет в среднем 80 тысяч рублей.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -604,28 +648,42 @@
                                         </div>
                                         <div class="title-lev2 fz16 black tal pl24 mb30">
                                             <p class="ffMcyr700 mb5">Предыстория</p>
-                                            <p class="lh1-65">В конце марта этого года нам поступила заявку на создание онлайн-бизнеса. Отличительной особенностью было то, что клиент хотел нечто стабильное и был готов заплатить за это большую цену. Мы поняли, что обычным лендингом дело не обойдется и приступили к разработке полноценного сайта для продажи с него лидов.</p>
+                                            <p class="lh1-65">В конце марта этого года нам поступила заявку на создание
+                                                онлайн-бизнеса. Отличительной особенностью было то, что клиент хотел
+                                                нечто стабильное и был готов заплатить за это большую цену. Мы поняли,
+                                                что обычным лендингом дело не обойдется и приступили к разработке
+                                                полноценного сайта для продажи с него лидов.</p>
                                         </div>
                                         <div class="b-our-projects__result fl-grid-b fxd-c pl24 mb20">
                                             <div class="b-our-projects__result-item mb30 w100">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Показатели проекта</p>
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">- Выбрана ниша продажи бетона, проанализированы сайты конкурентов
+                                                    <li class="b-our-projects__result-list-item">- Выбрана ниша продажи
+                                                        бетона, проанализированы сайты конкурентов
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">- Найдена компания-партнер для покупки лидов
+                                                    <li class="b-our-projects__result-list-item">- Найдена
+                                                        компания-партнер для покупки лидов
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">- Создан сайт для Москвы и обсласти.
+                                                    <li class="b-our-projects__result-list-item">- Создан сайт для
+                                                        Москвы и обсласти.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">- Написаны тексты, проработан каталог
+                                                    <li class="b-our-projects__result-list-item">- Написаны тексты,
+                                                        проработан каталог
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">- Сайт зарегистрирован в качественных “белых” каталогах
+                                                    <li class="b-our-projects__result-list-item">- Сайт зарегистрирован
+                                                        в качественных “белых” каталогах
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div class="b-our-projects__result-item w100">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Наш результат</p>
                                                 <div class="title-lev2 fz16 black tal">
-                                                    <p class="lh1-65">Перед майскими праздниками мы передали сайт клиенту, к середине мая нашли компанию-партнера на покупку лидов. Конечный клиент доволен сайтом, поступает много хороших заявок от частных клиентов (заливка ленточных фундаментов, покупка блоков ФБС) Чистая прибыль нашего клиента в сезон составляет в среднем 80 тысяч рублей.</p>
+                                                    <p class="lh1-65">Перед майскими праздниками мы передали сайт
+                                                        клиенту, к середине мая нашли компанию-партнера на покупку
+                                                        лидов. Конечный клиент доволен сайтом, поступает много хороших
+                                                        заявок от частных клиентов (заливка ленточных фундаментов,
+                                                        покупка блоков ФБС) Чистая прибыль нашего клиента в сезон
+                                                        составляет в среднем 80 тысяч рублей.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -648,15 +706,22 @@
                                             <div class="b-our-projects__result-item w100">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Показатели проекта</p>
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">Просчитали воронку, подобрали поставщиков, разработали сайт, наполнили его, дали рекламу.
+                                                    <li class="b-our-projects__result-list-item">Просчитали воронку,
+                                                        подобрали поставщиков, разработали сайт, наполнили его, дали
+                                                        рекламу.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">За несколько месяцев вышли на такие показатели: заказ стоит 100-200 рублей, средний чек 1500-2000 рублей.1
+                                                    <li class="b-our-projects__result-list-item">За несколько месяцев
+                                                        вышли на такие показатели: заказ стоит 100-200 рублей, средний
+                                                        чек 1500-2000 рублей.1
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">За месяц оборот составил около 200 000 рублей. Вложения окупились примерно через 4 месяца.
+                                                    <li class="b-our-projects__result-list-item">За месяц оборот
+                                                        составил около 200 000 рублей. Вложения окупились примерно через
+                                                        4 месяца.
                                                     </li>
                                                     <li class="b-our-projects__result-list-item">Доход 130 000 в месяц
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">На данный момент оборот ещё вырос и продолжает расти.
+                                                    <li class="b-our-projects__result-list-item">На данный момент оборот
+                                                        ещё вырос и продолжает расти.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -679,21 +744,31 @@
                                         </div>
                                         <div class="title-lev2 fz16 black tal pl24 mb45">
                                             <p class="ffMcyr700 mb5">Предыстория</p>
-                                            <p class="lh1-65">Покер — это увлечение клиента. Он любил играть в покер в свободное от работы время, он отлично разбирался в товарах, связанных с этой игрой. В то же время было большое желание уйти с работы и заниматься чем-то, что связано с его хобби.</p>
+                                            <p class="lh1-65">Покер — это увлечение клиента. Он любил играть в покер в
+                                                свободное от работы время, он отлично разбирался в товарах, связанных с
+                                                этой игрой. В то же время было большое желание уйти с работы и
+                                                заниматься чем-то, что связано с его хобби.</p>
                                         </div>
                                         <div class="b-our-projects__result fl-grid-b pl24 mb20">
                                             <div class="b-our-projects__result-item w100">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Показатели проекта</p>
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">Просчитали воронку, подобрали поставщиков, разработали сайт, наполнили его, дали рекламу.
+                                                    <li class="b-our-projects__result-list-item">Просчитали воронку,
+                                                        подобрали поставщиков, разработали сайт, наполнили его, дали
+                                                        рекламу.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">За несколько месяцев вышли на такие показатели: заказ стоит 100-200 рублей, средний чек 1500-2000 рублей.1
+                                                    <li class="b-our-projects__result-list-item">За несколько месяцев
+                                                        вышли на такие показатели: заказ стоит 100-200 рублей, средний
+                                                        чек 1500-2000 рублей.1
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">За месяц оборот составил около 200 000 рублей. Вложения окупились примерно через 4 месяца.
+                                                    <li class="b-our-projects__result-list-item">За месяц оборот
+                                                        составил около 200 000 рублей. Вложения окупились примерно через
+                                                        4 месяца.
                                                     </li>
                                                     <li class="b-our-projects__result-list-item">Доход 130 000 в месяц
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">На данный момент оборот ещё вырос и продолжает расти.
+                                                    <li class="b-our-projects__result-list-item">На данный момент оборот
+                                                        ещё вырос и продолжает расти.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -717,13 +792,20 @@
                                             <div class="b-our-projects__result-item w100">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Показатели проекта</p>
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">Разработан уникальный дизайн сайта, также сайт «посадили» на CMS.
+                                                    <li class="b-our-projects__result-list-item">Разработан уникальный
+                                                        дизайн сайта, также сайт «посадили» на CMS.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">За 4 месяца сайт стал выходить в top10 яндекса по запросам «велосипеды на литых дисках», «купить велосипеды на литых дисках» и т.д.
+                                                    <li class="b-our-projects__result-list-item">За 4 месяца сайт стал
+                                                        выходить в top10 яндекса по запросам «велосипеды на литых
+                                                        дисках», «купить велосипеды на литых дисках» и т.д.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">С поисковой выдачи в данный момент приходит около 10 заявок в день, из них 5-7 продаж.
+                                                    <li class="b-our-projects__result-list-item">С поисковой выдачи в
+                                                        данный момент приходит около 10 заявок в день, из них 5-7
+                                                        продаж.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Доход интернет магазина около 300 000 в месяц после полугода работы. Также был осущетсвлён выбор поставщиков.
+                                                    <li class="b-our-projects__result-list-item">Доход интернет магазина
+                                                        около 300 000 в месяц после полугода работы. Также был
+                                                        осущетсвлён выбор поставщиков.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -746,19 +828,29 @@
                                         </div>
                                         <div class="title-lev2 fz16 black tal pl24 mb45">
                                             <p class="ffMcyr700 mb5">Предыстория</p>
-                                            <p class="lh1-65">Клиент занимался продажей товаров через одностраничные сайты, но понял что интернет-магазин более стабильный источник дохода. Сам выбрал нишу связанную с велосипедами и гироскутерами, потому как сам товар пользуется спросом и средний чек относительно высокий.</p>
+                                            <p class="lh1-65">Клиент занимался продажей товаров через одностраничные
+                                                сайты, но понял что интернет-магазин более стабильный источник дохода.
+                                                Сам выбрал нишу связанную с велосипедами и гироскутерами, потому как сам
+                                                товар пользуется спросом и средний чек относительно высокий.</p>
                                         </div>
                                         <div class="b-our-projects__result fl-grid-b pl24 mb20">
                                             <div class="b-our-projects__result-item w100">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Показатели проекта</p>
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">Разработан уникальный дизайн сайта, также сайт «посадили» на CMS.
+                                                    <li class="b-our-projects__result-list-item">Разработан уникальный
+                                                        дизайн сайта, также сайт «посадили» на CMS.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">За 4 месяца сайт стал выходить в top10 яндекса по запросам «велосипеды на литых дисках», «купить велосипеды на литых дисках» и т.д.
+                                                    <li class="b-our-projects__result-list-item">За 4 месяца сайт стал
+                                                        выходить в top10 яндекса по запросам «велосипеды на литых
+                                                        дисках», «купить велосипеды на литых дисках» и т.д.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">С поисковой выдачи в данный момент приходит около 10 заявок в день, из них 5-7 продаж.
+                                                    <li class="b-our-projects__result-list-item">С поисковой выдачи в
+                                                        данный момент приходит около 10 заявок в день, из них 5-7
+                                                        продаж.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Доход интернет магазина около 300 000 в месяц после полугода работы. Также был осущетсвлён выбор поставщиков.
+                                                    <li class="b-our-projects__result-list-item">Доход интернет магазина
+                                                        около 300 000 в месяц после полугода работы. Также был
+                                                        осущетсвлён выбор поставщиков.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -782,7 +874,8 @@
                                             <div class="b-our-projects__result-item">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Показатели проекта</p>
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">Разработан одностраничный сайт.
+                                                    <li class="b-our-projects__result-list-item">Разработан
+                                                        одностраничный сайт.
                                                     </li>
                                                     <li class="b-our-projects__result-list-item">Настроена реклама.
                                                     </li>
@@ -793,11 +886,14 @@
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
                                                     <li class="b-our-projects__result-list-item">Конверсия: 2.45%
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Цена заявки: 1200 рублей
+                                                    <li class="b-our-projects__result-list-item">Цена заявки: 1200
+                                                        рублей
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Заявок с сайта: 8-10 в день при бюджете 10-15 тыс.
+                                                    <li class="b-our-projects__result-list-item">Заявок с сайта: 8-10 в
+                                                        день при бюджете 10-15 тыс.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Через несколько месяцев клиент вышел на доход в 300 000 рублей в месяц.
+                                                    <li class="b-our-projects__result-list-item">Через несколько месяцев
+                                                        клиент вышел на доход в 300 000 рублей в месяц.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -820,13 +916,15 @@
                                         </div>
                                         <div class="title-lev2 fz16 black tal pl24 mb45">
                                             <p class="ffMcyr700 mb5">Предыстория</p>
-                                            <p class="lh1-65">клиент работал в компании по проектирвоанию и продаже кухонь. Решил уйти с работы и открыть похожий бизнес.</p>
+                                            <p class="lh1-65">клиент работал в компании по проектирвоанию и продаже
+                                                кухонь. Решил уйти с работы и открыть похожий бизнес.</p>
                                         </div>
                                         <div class="b-our-projects__result fl-grid-b pl24 mb20">
                                             <div class="b-our-projects__result-item">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Показатели проекта</p>
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">Разработан одностраничный сайт.
+                                                    <li class="b-our-projects__result-list-item">Разработан
+                                                        одностраничный сайт.
                                                     </li>
                                                     <li class="b-our-projects__result-list-item">Настроена реклама.
                                                     </li>
@@ -837,11 +935,14 @@
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
                                                     <li class="b-our-projects__result-list-item">Конверсия: 2.45%
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Цена заявки: 1200 рублей
+                                                    <li class="b-our-projects__result-list-item">Цена заявки: 1200
+                                                        рублей
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Заявок с сайта: 8-10 в день при бюджете 10-15 тыс.
+                                                    <li class="b-our-projects__result-list-item">Заявок с сайта: 8-10 в
+                                                        день при бюджете 10-15 тыс.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Через несколько месяцев клиент вышел на доход в 300 000 рублей в месяц.
+                                                    <li class="b-our-projects__result-list-item">Через несколько месяцев
+                                                        клиент вышел на доход в 300 000 рублей в месяц.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -865,19 +966,25 @@
                                             <div class="b-our-projects__result-item">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Показатели проекта</p>
                                                 <div class="title-lev2 fz16 black tal mb45">
-                                                    <p class="lh1-65">Нишу подбирать не было нужно, так как она была изначально определена. Осталось сделать сайт, наполнить его и настроить рекламу. </p>
+                                                    <p class="lh1-65">Нишу подбирать не было нужно, так как она была
+                                                        изначально определена. Осталось сделать сайт, наполнить его и
+                                                        настроить рекламу. </p>
                                                 </div>
                                             </div>
                                             <div class="b-our-projects__result-item">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Наш результат</p>
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">160 р. стоила подтверждённая заявка (работал колл-центр)
+                                                    <li class="b-our-projects__result-list-item">160 р. стоила
+                                                        подтверждённая заявка (работал колл-центр)
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item"> В день подтверждённых около 20-ти заявок
+                                                    <li class="b-our-projects__result-list-item"> В день подтверждённых
+                                                        около 20-ти заявок
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Средний чек 1000 рублей.
+                                                    <li class="b-our-projects__result-list-item">Средний чек 1000
+                                                        рублей.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Оборот 500-600 тыс. рублей в месяц.
+                                                    <li class="b-our-projects__result-list-item">Оборот 500-600 тыс.
+                                                        рублей в месяц.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -900,25 +1007,33 @@
                                         </div>
                                         <div class="title-lev2 fz16 black tal pl24 mb45">
                                             <p class="ffMcyr700 mb5">Предыстория</p>
-                                            <p class="lh1-65">У клиента были завязки с поставщиками Gillette, потому как он изначально их продавал через offline-точку. Со временем упал доход с неё, и он решил gначать продавать через интернет.</p>
+                                            <p class="lh1-65">У клиента были завязки с поставщиками Gillette, потому как
+                                                он изначально их продавал через offline-точку. Со временем упал доход с
+                                                неё, и он решил gначать продавать через интернет.</p>
                                         </div>
                                         <div class="b-our-projects__result fl-grid-b pl24 mb20">
                                             <div class="b-our-projects__result-item">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Показатели проекта</p>
                                                 <div class="title-lev2 fz16 black tal mb45">
-                                                    <p class="lh1-65">Нишу подбирать не было нужно, так как она была изначально определена. Осталось сделать сайт, наполнить его и настроить рекламу. </p>
+                                                    <p class="lh1-65">Нишу подбирать не было нужно, так как она была
+                                                        изначально определена. Осталось сделать сайт, наполнить его и
+                                                        настроить рекламу. </p>
                                                 </div>
                                             </div>
                                             <div class="b-our-projects__result-item">
                                                 <p class="title-lev2 ffMcyr700 black mb30 fz18">Наш результат</p>
                                                 <ul class="b-our-projects__result-list fz16 lh1-6 ffMcyr300">
-                                                    <li class="b-our-projects__result-list-item">160 р. стоила подтверждённая заявка (работал колл-центр)
+                                                    <li class="b-our-projects__result-list-item">160 р. стоила
+                                                        подтверждённая заявка (работал колл-центр)
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item"> В день подтверждённых около 20-ти заявок
+                                                    <li class="b-our-projects__result-list-item"> В день подтверждённых
+                                                        около 20-ти заявок
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Средний чек 1000 рублей.
+                                                    <li class="b-our-projects__result-list-item">Средний чек 1000
+                                                        рублей.
                                                     </li>
-                                                    <li class="b-our-projects__result-list-item">Оборот 500-600 тыс. рублей в месяц.
+                                                    <li class="b-our-projects__result-list-item">Оборот 500-600 тыс.
+                                                        рублей в месяц.
                                                     </li>
                                                 </ul>
                                             </div>
@@ -947,8 +1062,10 @@
                     </div>
                 </div>
                 <div class="get-consultation-right">
-                    <form action="#" class="get-consultation-form  mb50 clearfix d-f">
-                        <input class="get-consultation-form__inp inputmask-phone dib" type="text" name="phone" id=""
+                    <form action="sendmail.php" class="get-consultation-form  mb50 clearfix d-f">
+                        <input type="hidden" name="formName"
+                               value="Получить бесплатную консультацию по рабочим нишам своего города">
+                        <input class="get-consultation-form__inp inputmask-phone dib" required type="text" name="phone"
                                placeholder="Ваш номер телефона">
                         <button class="red_btn dib">Отправить <i class=" ml20 r-arrow-icon"></i></button>
                     </form>
@@ -968,10 +1085,11 @@
                         <p class="page-title fz22 ttu">Свяжитесь <br>
                             с нами</p>
                         <div class="tac">
-                        <p class="base-text mb32 dib fz16">Оставьте свои
-                            контактные данные и мы свяжемся с Вами в ближайшее время.</p>
+                            <p class="base-text mb32 dib fz16">Оставьте свои
+                                контактные данные и мы свяжемся с Вами в ближайшее время.</p>
                         </div>
-                        <a href="#" class="green_btn dib popup-trigger call">Связаться! <i class="r-arrow-icon vam ml10"></i></a>
+                        <a href="#" class="green_btn dib popup-trigger call">Связаться! <i
+                                    class="r-arrow-icon vam ml10"></i></a>
                     </div>
 
                     <div class="scheme-of-work__item black">
@@ -998,57 +1116,59 @@
                     </div>
                     <div class="scheme-of-work__item lllast ml20 black">
                         <div class="z-i20 p-rel">
-                        <div class="scheme-of-work-icon ml00 b-circle"><span class="check-icon"></span></div>
-                        <p class="page-title fz22 mb25 ttu white ">Вручение <br>
-                            бизнеса</p>
-                        <ul class="scheme-of-work__item__list white fz16">
-                            <li class="base-text white pl10 tal ls-pin">Передача доступов</li>
-                            <li class="base-text white pl10 tal ls-pin">Первая прибыль</li>
-                            <li class="base-text white pl10 tal ls-pin">2 месяца обучения</li>
-                            <li class="base-text white pl10 tal ls-pin">Еженедельные вебинары</li>
-                        </ul>
-                    </div>
+                            <div class="scheme-of-work-icon ml00 b-circle"><span class="check-icon"></span></div>
+                            <p class="page-title fz22 mb25 ttu white ">Вручение <br>
+                                бизнеса</p>
+                            <ul class="scheme-of-work__item__list white fz16">
+                                <li class="base-text white pl10 tal ls-pin">Передача доступов</li>
+                                <li class="base-text white pl10 tal ls-pin">Первая прибыль</li>
+                                <li class="base-text white pl10 tal ls-pin">2 месяца обучения</li>
+                                <li class="base-text white pl10 tal ls-pin">Еженедельные вебинары</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="content__contacts clearfix">
             <div class="content__contacts-inner">
-            <a id="contacts"></a>
-            <div class="b-person left">
-                <div class="person mb20">
-                    <img class="img" src="images/person-photo.png" alt="">
+                <a id="contacts"></a>
+                <div class="b-person left">
+                    <div class="person mb20">
+                        <img class="img" src="images/person-photo.png" alt="">
+                    </div>
+                    <div class="fl-baseline jk-c">
+                        <p class="title-lev2 ffMcyr700 mr20 dib  black fz18">— Денис Жирков</p>
+                        <p class="label dib ttu fz14">Специалист по продаже услуги <br> «бизнес под ключ»</p>
+                    </div>
                 </div>
-                <div class="fl-baseline jk-c">
-                    <p class="title-lev2 ffMcyr700 mr20 dib  black fz18">— Денис Жирков</p>
-                    <p class="label dib ttu fz14">Специалист по продаже услуги <br> «бизнес под ключ»</p>
-                </div>
-            </div>
-            <div class="content__contacts__info right">
-                <div class="container">
-                <div class="b-page-title mb62 tac">
-                    <p class="page-title ttu tal mb25 black fz46">Остались вопросы?</p>
-                    <p class="title-lev2 tal fz18">Запишитесь на бесплатную онлайн-консультацию</p>
-                </div>
-                    <form class="fill-form" action="#">
-                        <div class="fl-grid-b mb40">
-                            <input class=" fill-form__inp mr15" type="text" name="name" id="" placeholder="Ваше имя">
-                            <input class=" fill-form__inp inputmask-phone" type="text" name="phone" id=""
-                                   placeholder="Ваш номер телефона">
+                <div class="content__contacts__info right">
+                    <div class="container">
+                        <div class="b-page-title mb62 tac">
+                            <p class="page-title ttu tal mb25 black fz46">Остались вопросы?</p>
+                            <p class="title-lev2 tal fz18">Запишитесь на бесплатную онлайн-консультацию</p>
                         </div>
-                        <div class="tal">
-                            <button class="red_btn w195">Отправить <i class=" ml20 r-arrow-icon"></i></button>
-                        </div>
-                    </form>
-                 </div>
-            </div>
+                        <form class="fill-form" action="sendmail.php">
+                            <input type="hidden" name="formName" value="Бесплатная консультация">
+                            <div class="fl-grid-b mb40">
+                                <input class=" fill-form__inp mr15" type="text" name="name" placeholder="Ваше имя">
+                                <input class=" fill-form__inp inputmask-phone" required type="text" name="phone"
+                                       placeholder="Ваш номер телефона">
+                            </div>
+                            <div class="tal">
+                                <button class="red_btn w195">Отправить <i class=" ml20 r-arrow-icon"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="our-clients">
             <div class="container">
                 <div class="b-page-title">
                     <p class="page-title ttu tal fz46 mb94">Наши клиенты</p>
-                    <p class="title-lev2 tal fz18 ">Мы гордимся нашими клиентами. На данный момент у нас насчитывается более 300 клиентов, получивших свои результаты.</p>
+                    <p class="title-lev2 tal fz18 ">Мы гордимся нашими клиентами. На данный момент у нас насчитывается
+                        более 300 клиентов, получивших свои результаты.</p>
                 </div>
                 <!-- BEGIN b-main-slider-wrapper -->
                 <div class="b-main-slider-wrapper  b-our-clients-right">
@@ -1140,16 +1260,17 @@
                 <a class="sliding-panel-link js-scrollScreen" href="#contacts">Контакты</a>
             </li>
         </ul>
-            <div class="fl-grid-a fx-w hidden w300">
-                <div class="work-hours  mt20 mb30">
-                    <p>Часы работы <br>
-                        10:00 – 19:00</p>
-                </div>
-                <a href="tel:+74956646607" class=" mb30 tdn header-phone no-hover">
-                    +7 (495) 664-66-07
-                </a>
-                <a href="#" class="green_btn-header popup-trigger spc mb30 "><i class=" phone-icon vam mr10"></i>Заказать звонок</a>
+        <div class="fl-grid-a fx-w hidden w300">
+            <div class="work-hours  mt20 mb30">
+                <p>Часы работы <br>
+                    10:00 – 19:00</p>
             </div>
+            <a href="tel:+74956646607" class=" mb30 tdn header-phone no-hover">
+                +7 (495) 664-66-07
+            </a>
+            <a href="#" class="green_btn-header popup-trigger spc mb30 "><i class=" phone-icon vam mr10"></i>Заказать
+                звонок</a>
+        </div>
 
     </nav>
 {% endblock %}

@@ -9,9 +9,43 @@
 
     <!-- Stylesheets -->
     {% include "stylesheets.twig" %}
+
+    <script>
+        window.plp = {
+            "page_id": 318068,
+            "content_id": 384678,
+            "lang": "ru"
+        };
+        window.plp_page_id = 318068;
+        window.plp_content_id = 384678;
+        window.plp_lang = "ru";
+        window.error_handler = function(e, fn_id) {
+            window.console && console.log && console.log(fn_id);
+            window['error_handler_' + fn_id] && eval(window['error_handler_' + fn_id]);
+            window.trackJs && trackJs.track(e);
+            //window.console && console.error && console.error(e.message);
+        };
+    </script>
+
+    <script type="text/javascript">
+        window._trackJs = {
+            token: "4fd557ccb06a4bd28e7b90da188cd54b",
+            application: "production",
+            enabled: location.href.indexOf("notrackjs") < 0,
+        };
+    </script>
 </head>
 
 <body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TDXXCM"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TDXXCM');</script>
+<!-- End Google Tag Manager -->
 <div class="site-wrapper">
     <!-- Header block -->
     {% include "header.twig" %}
@@ -27,12 +61,31 @@
 </div>
 <div class="popup tac hidden d-f">
     <div class="overlay"></div>
-    <form action="mail.php" class="popup-form p-rel" method="post">
+    <form action="sendmail.php" class="popup-form p-rel" method="post">
+        <input type="hidden" name="formName" value="Заказать звонок" />
         <div class="popup-form__close"></div>
         <div class="popup-form-content">
-        <p class="popup-form-title title-lev2 fz20 black mb20">Заказать звонок</p>
-                <div class="popup-input-wrapper dib vam mb30"><input type="text" placeholder="Ваше имя" name="name"></div>
-                <div class="popup-input-wrapper dib vam mb30"><input class="inputmask-phone" type="text" name="phone" placeholder="Ваш телефон"></div>
+            <p class="popup-form-title title-lev2 fz20 black mb20">Заказать звонок</p>
+            <div class="popup-input-wrapper dib vam mb30"><input type="text" placeholder="Ваше имя" name="name"></div>
+            <div class="popup-input-wrapper dib vam mb30"><input class="inputmask-phone" required type="text" name="phone"
+                                                                 placeholder="Ваш телефон"></div>
+            <div class="tal">
+                <button class="green_btn ">Отправить <i class="r-arrow-icon ml20"></i></button>
+            </div>
+        </div>
+    </form>
+    <form action="sendmail.php" class="p-rel popup-know-more__form popup-form" method="post">
+        <input type="hidden" name="formName" value="Узнать подробнее" />
+        <div class="popup-form__close"></div>
+        <div class="popup-form-content">
+            <p class="popup-form-title title-lev2 fz20 black mb20">
+                Чтобы получить подробную информацию <br>
+                Оставьте свои данные для связи
+            </p>
+            <div class="popup-input-wrapper dib vam mb30"><input type="text" placeholder="Ваше имя" name="name"></div>
+            <div class="popup-input-wrapper dib vam mb30"><input type="text" placeholder="Ваш E-mail" name="email"></div>
+            <div class="popup-input-wrapper dib vam mb30"><input class="inputmask-phone" required type="text" name="phone"
+                                                                 placeholder="Ваш телефон"></div>
             <div class="tal">
                 <button class="green_btn ">Отправить <i class="r-arrow-icon ml20"></i></button>
             </div>

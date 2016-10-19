@@ -33,9 +33,17 @@ $(document).ready(function () {
     });
 
     $(document).on("click", '.popup-trigger', function (e) {
-        $('.popup').fadeIn(400);
-        $('.popup-form').show();
-        $('.notification').hide();
+        if($(this).attr('data-more-popup') == "true") {
+            $('.popup').fadeIn(400);
+
+            $('.popup-know-more__form').show();
+            $('.notification, .popup-form:not(.popup-know-more__form)').hide();
+        } else {
+            $('.popup').fadeIn(400);
+
+            $('.popup-form:not(.popup-know-more__form)').show();
+            $('.notification, .popup-know-more__form').hide();
+        }
         e.preventDefault();
     });
 
@@ -51,12 +59,12 @@ $(document).ready(function () {
     });
 
     $(document).on("click", '.proj', function (e) {
-        $('.popup').find('.popup-form').find('.popup-form-title').text('Заказать проект');
+        // $('.popup').find('.popup-form').find('.popup-form-title').text('Заказать проект');
         e.preventDefault();
     });
 
     $(document).on("click", '.call', function (e) {
-        $('.popup').find('.popup-form').find('.popup-form-title').text('Заказать звонок');
+        // $('.popup').find('.popup-form').find('.popup-form-title').text('Заказать звонок');
         e.preventDefault();
     });
 

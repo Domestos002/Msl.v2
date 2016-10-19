@@ -7,9 +7,10 @@ $(document).ready(function () {
             e.preventDefault();
 
             var form = e.target,
-                formData = serializeForm(form);
+                formData = serializeForm(form),
+                url = form.attr('action');
 
-            $.post('mail.php', formData, function (data) {
+            $.post(url, formData, function (data) {
                 if(data !== '1')
                     return;
 
@@ -85,7 +86,8 @@ function clearForm(formData) {
             if(currentData.type === 'radio' || currentData.type === 'checkbox'){
                 if(currentData.checked === true) currentData.checked = false;
             } else {
-                currentData.value = "";
+                if(currentData.type != 'hidden')
+                    currentData.value = "";
             }
         }
     }

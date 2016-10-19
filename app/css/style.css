@@ -1914,10 +1914,9 @@ footer > .container {
   height: 50px;
   font-size: 0;
   box-sizing: border-box;
-  border: 1px solid #f0f0f1;
+  border: 1px solid #b1aaaa;
   position: absolute;
-  top: 50%;
-  margin-top: -25px;
+  top: 400px;
   background: #fff;
 }
 

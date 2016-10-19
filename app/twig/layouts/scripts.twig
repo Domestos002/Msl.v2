@@ -63,38 +63,3 @@
         });
     }, 1000);
 </script>
-
-<script>
-    $( function() {
-        $( "#slider-range" ).slider({
-            range: true,
-            min: 75000,
-            max: 500000,
-            step: 5000,
-            values: [ 75000, 150000 ],
-            slide: function( event, ui ) {
-                var slider = $(ui.handle).closest('.ui-slider');
-                slider
-                    .find('.ui-slider-handle:eq(0)')
-                    .html('<span class="slider_ui-handle__val">'+ui.values[0]+'</span>');
-                slider
-                    .find('.ui-slider-handle:eq(1)')
-                    .html('<span class="slider_ui-handle__val">'+ui.values[1]+'</span>');
-
-                $('input[name="budget"]').val(ui.values[0]+' - '+ui.values[1]);
-            }
-        });
-
-        $(function(){
-            var slider = $('#slider-range');
-            slider
-                    .find('.ui-slider-handle:eq(0)')
-                    .html('<span class="slider_ui-handle__val">'+slider.slider("values", 0)+'</span>');
-            slider
-                    .find('.ui-slider-handle:eq(1)')
-                    .html('<span class="slider_ui-handle__val">'+slider.slider("values", 1)+'</span>');
-
-            $('input[name="budget"]').val(slider.slider("values", 0)+' - '+slider.slider("values", 1));
-        });
-    } );
-</script>

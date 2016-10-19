@@ -2,8 +2,10 @@ var map2;
 
 
 function initLandMap2() {
-    var secheltLoc = new google.maps.LatLng(55.706098, 37.618803);
-    var secheltLoc2 = new google.maps.LatLng(55.708000, 37.618803);
+
+    var secheltLoc = new google.maps.LatLng(55.710366, 37.615753);
+    // var secheltLoc = new google.maps.LatLng(55.706098, 37.618803);
+    var secheltLoc2 = new google.maps.LatLng(55.712366, 37.615753);
 
 
     map2 = new google.maps.Map(document.getElementById('land-map'), {
