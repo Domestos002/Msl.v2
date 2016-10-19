@@ -26,8 +26,6 @@ $(document).ready(function () {
                         }, 2000);
                     });
 
-                    console.log('hi')
-
                 } else {
                     $('.popup').fadeIn(200);
                     $('.popup-form').hide();
